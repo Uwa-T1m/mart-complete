@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Row, Col, Card } from 'react-bootstrap';
+import { Row, Col, Card, Container } from 'react-bootstrap';
 import  Search  from '../components/Search';
 import FIlterWidget from '../components/FIlterWidget';
 import { useState } from 'react';
@@ -45,7 +45,8 @@ const HomePage = () => {
 
   return (
     <>
-     <AppNavbar />
+    <Container>
+    <AppNavbar />
         <Search />
       <Row>
         {filteredProducts.map((product) => (
@@ -68,6 +69,7 @@ const HomePage = () => {
               handleFilterChange={handleFilterChange}
               resetFilters={resetFilters}
         />
+    </Container>
     </>
   )
 }

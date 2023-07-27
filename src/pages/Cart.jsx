@@ -1,7 +1,7 @@
 import { FaShoppingCart, FaTrashAlt } from 'react-icons/fa';
 import '../index.css'
 import { useState, useEffect } from 'react';
-import { Button, Card, Col, Row } from 'react-bootstrap';
+import { Button, Card, Col, Row, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Link } from 'react-router-dom';
 
@@ -25,6 +25,7 @@ import { Link } from 'react-router-dom';
 
 return (
     <>
+<Container>
 <h1>Cart</h1>
 <Row  className='table-row'>
   <Col><h5>ITEM</h5></Col>
@@ -73,6 +74,7 @@ return (
 
 }
   </Card>
+</Container>
 
 </>
   
