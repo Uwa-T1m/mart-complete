@@ -1,8 +1,9 @@
-import { Row, Col } from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap"
 
 const Checkout = () => {
   return (
-    <Row className="g-5">
+   <Container>
+     <Row className="g-5">
         <Col md={7} lg={8}>
         <h4 className="mb-3">Billing Address</h4>
         <form action="" className="needs-validation">
@@ -87,6 +88,7 @@ const Checkout = () => {
         </form>
         </Col>
     </Row>
+   </Container>
   )
 }
 
