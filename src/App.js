@@ -14,11 +14,11 @@ const App = () => {
     <Router>
       <Container>
         <Routes>
-        <Route exact path="/" element={<HomePage />}/>
-          <Route exact path="/cart" element={<Cart />}/>
-          <Route exact path="/login" element={<Login />}/>
-          <Route exact path="/signup" element={<Signup />} />
-          <Route exact path="/checkout" element={<Checkout />} />
+        <Route  path="/" element={<HomePage />}/>
+          <Route  path="/cart" element={<Cart />}/>
+          <Route  path="/login" element={<Login />}/>
+          <Route  path="/signup" element={<Signup />} />
+          <Route  path="/checkout" element={<Checkout />} />
           <Route path='/product/:id' element={<ProductDetails />}/>
         </Routes>
        
