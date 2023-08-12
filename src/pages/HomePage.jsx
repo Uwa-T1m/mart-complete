@@ -8,6 +8,7 @@ import Products from '../components/products';
 
 const HomePage = () => {
   const [filters, setFilters] = useState({
+    title: '',
     company: '',
     color: '',
     price: '',
@@ -25,6 +26,7 @@ const HomePage = () => {
 
   const resetFilters = () => {
     setFilters({
+      title: '',
       company: '',
       color: '',
       price: '',
@@ -35,6 +37,7 @@ const HomePage = () => {
 
   const filteredProducts = Products.filter((product) => {
     return (
+      (!filters.title || product.name.toLowerCase().includes(filters.title.toLowerCase())) &&
       (!filters.company || product.company.toLowerCase().includes(filters.company.toLowerCase())) &&
       (!filters.color || product.colors.includes(filters.color)) &&
       (!filters.price || product.price <= parseFloat(filters.price)) &&
