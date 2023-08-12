@@ -15,9 +15,9 @@ const Counter = ({count, setCount}) => {
 
   return (
     <div>
-      <button className='btn' onClick={handleIncrement}><FaPlus /></button>
-      <h1>{count}</h1>
       <button className='btn' onClick={handleDecrement}><FaMinus /></button>
+      <h1>{count}</h1>
+      <button className='btn' onClick={handleIncrement}><FaPlus /></button>
     </div>
   );
 };
