@@ -51,7 +51,7 @@ const HomePage = () => {
       <Row>
         {filteredProducts.map((product) => (
           <Col key={product.id} sm={6} md={4} lg={3} className="mb-4">
-            <Link to={`/product/${product.id}`}>
+            <Link to={`/product/${product.id}`} style={{textDecoration : "none"}}>
             <Card>
               <Card.Img variant="top" src={product.image} style={{ height: '175px' }} />
               <Card.Body>
