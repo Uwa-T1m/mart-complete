@@ -3,9 +3,9 @@ import {RiSearch2Line} from 'react-icons/ri'
 
 const Search = () => {
   return (
-    <Container className="form-control d-flex my-4 outline-0 border-0 shadow-none">
+    <Container className="form-control d-flex my-4 shadow-none">
         <i><RiSearch2Line /></i>
-        <input type="text" placeholder='Search for products'/>
+        <input type="text" placeholder='Search for products' className="outline-0 border-0 "/>
     </Container>
   )
 }
