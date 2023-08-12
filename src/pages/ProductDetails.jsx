@@ -48,12 +48,9 @@ const ProductDetails = () => {
         
           <h1 style={{textTransform: 'capitalize'}}>{product.name}</h1>
           <span className="badge text-dark">${product.price}</span>
-          <p>{product.description}
-          <br />
           <br />
          <span style={{display: 'flex',gap: '10px', textAlign: 'center'}}> <b>SKU: </b> {product.id}</span>
          <span style={{display: 'flex',gap: '10px', textAlign: 'center'}}> <b>Brand: </b> {product.company}</span>
-          </p>
           <hr />
           <div className="colors">
             <h6>Colors:  </h6>
