@@ -51,16 +51,15 @@ const HomePage = () => {
       <Row>
         {filteredProducts.map((product) => (
           <Col key={product.id} sm={6} md={4} lg={3} className="mb-4">
+            <Link to={`/product/${product.id}`}>
             <Card>
               <Card.Img variant="top" src={product.image} style={{ height: '175px' }} />
               <Card.Body>
                 <Card.Title style={{textTransform: 'capitalize'}}>{product.name}</Card.Title>
                 <Card.Text>${product.price}</Card.Text>
-                <Link to={`/product/${product.id}`} className="btn btn-primary">
-                  View Details
-                </Link>
               </Card.Body>
             </Card>
+                </Link>
           </Col>
         ))}
       </Row>
